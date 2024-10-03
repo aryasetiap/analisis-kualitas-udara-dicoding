@@ -1,24 +1,6 @@
-# File ini berisi daftar library yang dibutuhkan untuk menjalankan aplikasi
-# Versi library diatur sesuai dengan lingkungan kerja yang telah digunakan
-
-# DataFrame dan pengolahan data
-# Pandas digunakan untuk memanipulasi dan menganalisis data
 pandas==2.2.3  
-
-# Visualisasi data
-# Matplotlib digunakan untuk membuat grafik dan plot
 matplotlib==3.9.2
-# Seaborn digunakan untuk visualisasi yang lebih interaktif dan menarik  
 seaborn==0.13.2  
-
-# Peta interaktif
-# Folium digunakan untuk membuat peta interaktif berbasis Leaflet.js
 folium==0.17.0  
-
-# Operasi numerik
-# Numpy digunakan untuk perhitungan numerik efisien
 numpy==2.1.1  
-
-# Antarmuka web
-# Streamlit digunakan untuk membuat aplikasi web interaktif
 streamlit==1.39.0  
