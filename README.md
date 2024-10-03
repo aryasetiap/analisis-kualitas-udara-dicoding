@@ -6,7 +6,7 @@
 
 Streamlit Cloud : ()
 
-![Air Quality Dashboard Preview](dashboard/image.png)
+![Air Quality Dashboard Preview](/dashboard/dashboard.png)
 
 ## Setup environment
 
@@ -25,20 +25,20 @@ The steps to create your virtual environment from this project is as follows:
 1. Clone this repository
 
    ```
-   git clone
+   git clone git@github.com:aryasetiap/analisis-kualitas-udara-dicoding.git
    ```
 
 2. Move to directory
    ```
-   cd
+   cd dashboard
    ```
 3. Run streamlit app
    ```
-   python -m streamlit run dashboard/dashboard.py
+   python -m streamlit run dashboard.py
    ```
    or
    ```
-   streamlit run dashboard/dashboard.py
+   streamlit run dashboard.py
    ```
 4. Stop the application program by `ctrl + c`.
 
