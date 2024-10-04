@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_771be1869f380d6ac2675555fb44ffc1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_771be1869f380d6ac2675555fb44ffc1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_771be1869f380d6ac2675555fb44ffc1 = L.map(
+                "map_771be1869f380d6ac2675555fb44ffc1",
+                {
+                    center: [39.961416666666665, 116.37091666666664],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_83d0e2e9db5f85495d6cbf0d025025bc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_83d0e2e9db5f85495d6cbf0d025025bc.addTo(map_771be1869f380d6ac2675555fb44ffc1);
+        
+    
+            var marker_e2744e570f6f6666f50ec324e2bd2663 = L.marker(
+                [39.973, 116.413],
+                {}
+            ).addTo(map_771be1869f380d6ac2675555fb44ffc1);
+        
+    
+            var icon_5db2e2c9c8287877732cb88a14c45ded = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e2744e570f6f6666f50ec324e2bd2663.setIcon(icon_5db2e2c9c8287877732cb88a14c45ded);
+        
+    
+        var popup_4b125c9ddd63df01042c0286dfe37c1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fbafc5e260f9a33f056a987e78437c8 = $(`<div id="html_9fbafc5e260f9a33f056a987e78437c8" style="width: 100.0%; height: 100.0%;"><strong>Aotizhongxin</strong><br>PM2.5: 77.78 µg/m³<br>PM10: 105.71 µg/m³</div>`)[0];
+                popup_4b125c9ddd63df01042c0286dfe37c1f.setContent(html_9fbafc5e260f9a33f056a987e78437c8);
+            
+        
+
+        marker_e2744e570f6f6666f50ec324e2bd2663.bindPopup(popup_4b125c9ddd63df01042c0286dfe37c1f)
+        ;
+
+        
+    
+    
+            var marker_6c372497d8097ed415314aff45fd08e8 = L.marker(
+                [39.981, 116.205],
+                {}
+            ).addTo(map_771be1869f380d6ac2675555fb44ffc1);
+        
+    
+            var icon_b5ea4782accd27c042677458f15b66fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6c372497d8097ed415314aff45fd08e8.setIcon(icon_b5ea4782accd27c042677458f15b66fc);
+        
+    
+        var popup_1a8805dcb0295e620d77e82cad795710 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c52e810749410e04309d6ea0890f5bfb = $(`<div id="html_c52e810749410e04309d6ea0890f5bfb" style="width: 100.0%; height: 100.0%;"><strong>Changping</strong><br>PM2.5: 68.45 µg/m³<br>PM10: 92.28 µg/m³</div>`)[0];
+                popup_1a8805dcb0295e620d77e82cad795710.setContent(html_c52e810749410e04309d6ea0890f5bfb);
+            
+        
+
+        marker_6c372497d8097ed415314aff45fd08e8.bindPopup(popup_1a8805dcb0295e620d77e82cad795710)
+        ;
+
+        
+    
+    
+            var marker_beb547461f04becce82bad9bd11884f9 = L.marker(
+                [39.965, 116.239],
+                {}
+            ).addTo(map_771be1869f380d6ac2675555fb44ffc1);
+        
+    
+            var icon_f14aa3891b6b3b49f6fef85e064c84a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_beb547461f04becce82bad9bd11884f9.setIcon(icon_f14aa3891b6b3b49f6fef85e064c84a2);
+        
+    
+        var popup_676ac57a91f5e456c800255abd955a2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f673fe58c2a29d10cc1f5d6e92d6ae4b = $(`<div id="html_f673fe58c2a29d10cc1f5d6e92d6ae4b" style="width: 100.0%; height: 100.0%;"><strong>Dingling</strong><br>PM2.5: 63.39 µg/m³<br>PM10: 82.06 µg/m³</div>`)[0];
+                popup_676ac57a91f5e456c800255abd955a2a.setContent(html_f673fe58c2a29d10cc1f5d6e92d6ae4b);
+            
+        
+
+        marker_beb547461f04becce82bad9bd11884f9.bindPopup(popup_676ac57a91f5e456c800255abd955a2a)
+        ;
+
+        
+    
+    
+            var marker_1a6276c459853561c4d7f12eb5d798c7 = L.marker(
+                [39.938, 116.42],
+                {}
+            ).addTo(map_771be1869f380d6ac2675555fb44ffc1);
+        
+    
+            var icon_e481eca4f6c1cd3887175a0759d75a08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1a6276c459853561c4d7f12eb5d798c7.setIcon(icon_e481eca4f6c1cd3887175a0759d75a08);
+        
+    
+        var popup_5e8341cdc5c6fd1b25cdccd4487ca358 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fb2220839f61ff019cb728515942e8c = $(`<div id="html_8fb2220839f61ff019cb728515942e8c" style="width: 100.0%; height: 100.0%;"><strong>Dongsi</strong><br>PM2.5: 80.37 µg/m³<br>PM10: 105.27 µg/m³</div>`)[0];
+                popup_5e8341cdc5c6fd1b25cdccd4487ca358.setContent(html_8fb2220839f61ff019cb728515942e8c);
+            
+        
+
+        marker_1a6276c459853561c4d7f12eb5d798c7.bindPopup(popup_5e8341cdc5c6fd1b25cdccd4487ca358)
+        ;
+
+        
+    
+    
+            var marker_1a21cd0ea8f4e5b0b0716649cdb5007e = L.marker(
+                [39.913, 116.274],
+                {}
+            ).addTo(map_771be1869f380d6ac2675555fb44ffc1);
+        
+    
+            var icon_6318b4428712c117c5f2feb26ffdf7bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1a21cd0ea8f4e5b0b0716649cdb5007e.setIcon(icon_6318b4428712c117c5f2feb26ffdf7bb);
+        
+    
+        var popup_a922a7582cd0fb1bbb99eb84d6cb1764 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aebecfe7858c82d69253e06397dfa992 = $(`<div id="html_aebecfe7858c82d69253e06397dfa992" style="width: 100.0%; height: 100.0%;"><strong>Guanyuan</strong><br>PM2.5: 78.32 µg/m³<br>PM10: 105.23 µg/m³</div>`)[0];
+                popup_a922a7582cd0fb1bbb99eb84d6cb1764.setContent(html_aebecfe7858c82d69253e06397dfa992);
+            
+        
+
+        marker_1a21cd0ea8f4e5b0b0716649cdb5007e.bindPopup(popup_a922a7582cd0fb1bbb99eb84d6cb1764)
+        ;
+
+        
+    
+    
+            var marker_50add82da7b4c165202ea85d212ba5cc = L.marker(
+                [39.911, 116.318],
+                {}
+            ).addTo(map_771be1869f380d6ac2675555fb44ffc1);
+        
+    
+            var icon_fb8a085d74d1cff4352b9bbf35fd18aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_50add82da7b4c165202ea85d212ba5cc.setIcon(icon_fb8a085d74d1cff4352b9bbf35fd18aa);
+        
+    
+        var popup_0c64f0d5c91fa4bc6167a2ea1245bc3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b354f9447bd7af827d02334868106b30 = $(`<div id="html_b354f9447bd7af827d02334868106b30" style="width: 100.0%; height: 100.0%;"><strong>Gucheng</strong><br>PM2.5: 78.79 µg/m³<br>PM10: 114.33 µg/m³</div>`)[0];
+                popup_0c64f0d5c91fa4bc6167a2ea1245bc3f.setContent(html_b354f9447bd7af827d02334868106b30);
+            
+        
+
+        marker_50add82da7b4c165202ea85d212ba5cc.bindPopup(popup_0c64f0d5c91fa4bc6167a2ea1245bc3f)
+        ;
+
+        
+    
+    
+            var marker_a6371a992e68cefd22f33ddfd86fd85b = L.marker(
+                [40.064, 116.267],
+                {}
+            ).addTo(map_771be1869f380d6ac2675555fb44ffc1);
+        
+    
+            var icon_c087ce28c49d75fe2bdd0049956af99a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a6371a992e68cefd22f33ddfd86fd85b.setIcon(icon_c087ce28c49d75fe2bdd0049956af99a);
+        
+    
+        var popup_4045ec5a0bbb3b291b48352c7d8b7cc2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e965866fc1b37cdff164ad13c0ad5311 = $(`<div id="html_e965866fc1b37cdff164ad13c0ad5311" style="width: 100.0%; height: 100.0%;"><strong>Huairou</strong><br>PM2.5: 67.07 µg/m³<br>PM10: 89.33 µg/m³</div>`)[0];
+                popup_4045ec5a0bbb3b291b48352c7d8b7cc2.setContent(html_e965866fc1b37cdff164ad13c0ad5311);
+            
+        
+
+        marker_a6371a992e68cefd22f33ddfd86fd85b.bindPopup(popup_4045ec5a0bbb3b291b48352c7d8b7cc2)
+        ;
+
+        
+    
+    
+            var marker_819a31333acdcfaf1bd4750fb9a46260 = L.marker(
+                [39.879, 116.329],
+                {}
+            ).addTo(map_771be1869f380d6ac2675555fb44ffc1);
+        
+    
+            var icon_43effb7147065183b75a2e295a16461e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_819a31333acdcfaf1bd4750fb9a46260.setIcon(icon_43effb7147065183b75a2e295a16461e);
+        
+    
+        var popup_5496b0d1ae41b20cd4afa2e4efd4d9f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ea64506d317551083289acad390003d = $(`<div id="html_7ea64506d317551083289acad390003d" style="width: 100.0%; height: 100.0%;"><strong>Nongzhanguan</strong><br>PM2.5: 79.05 µg/m³<br>PM10: 104.56 µg/m³</div>`)[0];
+                popup_5496b0d1ae41b20cd4afa2e4efd4d9f9.setContent(html_7ea64506d317551083289acad390003d);
+            
+        
+
+        marker_819a31333acdcfaf1bd4750fb9a46260.bindPopup(popup_5496b0d1ae41b20cd4afa2e4efd4d9f9)
+        ;
+
+        
+    
+    
+            var marker_74c3b8d66b1f56353dac98a28f6a472b = L.marker(
+                [40.131, 116.675],
+                {}
+            ).addTo(map_771be1869f380d6ac2675555fb44ffc1);
+        
+    
+            var icon_025b79ff4c01c3920862958608389fcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_74c3b8d66b1f56353dac98a28f6a472b.setIcon(icon_025b79ff4c01c3920862958608389fcd);
+        
+    
+        var popup_0ba931bbbb53d4be4528136e00441fad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e43baca7150aeb33438681e854f40ff1 = $(`<div id="html_e43baca7150aeb33438681e854f40ff1" style="width: 100.0%; height: 100.0%;"><strong>Shunyi</strong><br>PM2.5: 74.89 µg/m³<br>PM10: 95.66 µg/m³</div>`)[0];
+                popup_0ba931bbbb53d4be4528136e00441fad.setContent(html_e43baca7150aeb33438681e854f40ff1);
+            
+        
+
+        marker_74c3b8d66b1f56353dac98a28f6a472b.bindPopup(popup_0ba931bbbb53d4be4528136e00441fad)
+        ;
+
+        
+    
+    
+            var marker_accfc7d77efca360f043dc1fc8a3a05c = L.marker(
+                [39.883, 116.471],
+                {}
+            ).addTo(map_771be1869f380d6ac2675555fb44ffc1);
+        
+    
+            var icon_235951bf8963d852dfb78daa17b5a6e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_accfc7d77efca360f043dc1fc8a3a05c.setIcon(icon_235951bf8963d852dfb78daa17b5a6e5);
+        
+    
+        var popup_354e67842e006eb408cfa41861ba45e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbee0cceb3839f295ec6d3eaf01e574d = $(`<div id="html_dbee0cceb3839f295ec6d3eaf01e574d" style="width: 100.0%; height: 100.0%;"><strong>Tiantan</strong><br>PM2.5: 77.61 µg/m³<br>PM10: 102.60 µg/m³</div>`)[0];
+                popup_354e67842e006eb408cfa41861ba45e9.setContent(html_dbee0cceb3839f295ec6d3eaf01e574d);
+            
+        
+
+        marker_accfc7d77efca360f043dc1fc8a3a05c.bindPopup(popup_354e67842e006eb408cfa41861ba45e9)
+        ;
+
+        
+    
+    
+            var marker_2a66d1265f10bb50953d2d618778e024 = L.marker(
+                [39.964, 116.329],
+                {}
+            ).addTo(map_771be1869f380d6ac2675555fb44ffc1);
+        
+    
+            var icon_b46d8390353a76368331a8b69de47e15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2a66d1265f10bb50953d2d618778e024.setIcon(icon_b46d8390353a76368331a8b69de47e15);
+        
+    
+        var popup_30518222b0040b9d94b5457ec42067d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9ba4142ad3c19593c0932d5f8b6e4bb = $(`<div id="html_c9ba4142ad3c19593c0932d5f8b6e4bb" style="width: 100.0%; height: 100.0%;"><strong>Wanliu</strong><br>PM2.5: 78.75 µg/m³<br>PM10: 106.64 µg/m³</div>`)[0];
+                popup_30518222b0040b9d94b5457ec42067d1.setContent(html_c9ba4142ad3c19593c0932d5f8b6e4bb);
+            
+        
+
+        marker_2a66d1265f10bb50953d2d618778e024.bindPopup(popup_30518222b0040b9d94b5457ec42067d1)
+        ;
+
+        
+    
+    
+            var marker_0067db016d4641dd255a31e2780a9e62 = L.marker(
+                [39.935, 116.511],
+                {}
+            ).addTo(map_771be1869f380d6ac2675555fb44ffc1);
+        
+    
+            var icon_ca595ef94a156a5fe097ae428dfe0cca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0067db016d4641dd255a31e2780a9e62.setIcon(icon_ca595ef94a156a5fe097ae428dfe0cca);
+        
+    
+        var popup_5de27604cbdc46d8e46bff987552f92d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2816f347d11cc18cbe29c9d356d3ff1d = $(`<div id="html_2816f347d11cc18cbe29c9d356d3ff1d" style="width: 100.0%; height: 100.0%;"><strong>Wanshouxigong</strong><br>PM2.5: 79.26 µg/m³<br>PM10: 107.22 µg/m³</div>`)[0];
+                popup_5de27604cbdc46d8e46bff987552f92d.setContent(html_2816f347d11cc18cbe29c9d356d3ff1d);
+            
+        
+
+        marker_0067db016d4641dd255a31e2780a9e62.bindPopup(popup_5de27604cbdc46d8e46bff987552f92d)
+        ;
+
+        
+    
+</script>
+</html>
